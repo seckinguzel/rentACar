@@ -26,7 +26,7 @@ public class BrandManager implements BrandService {
 	public List<GetAllBrandsResponse> getAll(){
 		//Business Rules
 		//We dont want to show all entity datas to the user. So we are going to do below actions.
-		List<Brand> brands = brandRepository.findAll(); //ben buradaki listeyi satır 25 deki listenin tipine (GetAllBrandsResponse) çevirmem gerekiyor.
+		List<Brand> brands = brandRepository.findAll(); //ben buradaki listeyi satır 26 deki listenin tipine (GetAllBrandsResponse) çevirmem gerekiyor.
 		List<GetAllBrandsResponse> brandsResponse = new ArrayList<GetAllBrandsResponse>(); //Burada boş bir liste oluşturuyorum.
 		
 		for (Brand brand : brands) { //Ana listeyi dolaşıyorum 
